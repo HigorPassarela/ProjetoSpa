@@ -33,6 +33,7 @@ public class PainelCadastrarPaciente extends JPanel {
         Font font2 = new Font("SansSerif", Font.PLAIN,18);
 
         //objetos
+        //JLABEL
         jlNome = new JLabel("Nome:");
         jlNome.setFont(font1);
         jlSexo = new JLabel("Genêro:");
@@ -45,7 +46,7 @@ public class PainelCadastrarPaciente extends JPanel {
         jlCpf.setFont(font1);
         jlPeso = new JLabel("Peso:");
         jlPeso.setFont(font1);
-
+        //JTEXTFIELD
         jtfNome = new JTextField();
         jtfNome.setFont(font2);
         jtfSexo = new JTextField();
@@ -58,7 +59,7 @@ public class PainelCadastrarPaciente extends JPanel {
         jtfCpf.setFont(font2);
         jtfPeso = new JTextField();
         jtfPeso.setFont(font2);
-
+        //JBUTTON
         jbCadastrar = new JButton("CADASTRAR");
         jbCadastrar.setBackground(Color.white);
         jbCadastrar.setFont(font2);

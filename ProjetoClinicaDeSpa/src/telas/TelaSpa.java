@@ -44,18 +44,18 @@ public class TelaSpa extends JFrame {
 
         //JMENU
         jmCadastro = new JMenu("Cadastrar");
-        jmMostrar = new JMenu("Mostrar");
+        jmMostrar = new JMenu("Exibir");
         jmPesquisar = new JMenu("Pesquisar");
         jmAlterar = new JMenu("Alterar");
         jmRemover = new JMenu("Deletar");
         jmSair = new JMenu("Sair");
 
         //JMENUITEM
-        jmiCadPaciente = new JMenuItem("Cadastrar Pacientes");
-        jmimostrarPacientes = new JMenuItem("Mostrar Pacientes");
-        jmiMetodos = new JMenuItem("Mostrar Métodos");
+        jmiCadPaciente = new JMenuItem("Pacientes");
+        jmimostrarPacientes = new JMenuItem("Pacientes");
+        jmiMetodos = new JMenuItem("Métodos");
         jmiEvolucao = new JMenuItem("Evolução Do Paciente");
-        jmiPesquisar = new JMenuItem("Pesquisar Paciente");
+        jmiPesquisar = new JMenuItem("Paciente");
         jmiAlterar = new JMenuItem("Alterar Dados");
         jmidelPaciente = new JMenuItem("Deletar Paciente");
         jmiSair = new JMenuItem("Sair");
@@ -112,7 +112,7 @@ public class TelaSpa extends JFrame {
         jmiPesquisar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                PainelPesquisarClientes pesquisarClientes = new PainelPesquisarClientes();
+                PainelPesquisarPacientes pesquisarClientes = new PainelPesquisarPacientes();
                 getContentPane().removeAll();
                 getContentPane().add(pesquisarClientes);
                 getContentPane().validate();
